@@ -9,3 +9,6 @@ require("vincentdian.plugins.telescope")
 require("vincentdian.plugins.nvim-tree")
 require("vincentdian.plugins.nvim-cmp")
 
+require("vincentdian.plugins.lsp.mason")
+require("vincentdian.plugins.lsp.lspsaga")
+require("vincentdian.plugins.lsp.lspconfig")
