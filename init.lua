@@ -12,3 +12,8 @@ require("vincentdian.plugins.nvim-cmp")
 require("vincentdian.plugins.lsp.mason")
 require("vincentdian.plugins.lsp.lspsaga")
 require("vincentdian.plugins.lsp.lspconfig")
+require("vincentdian.plugins.lsp.null-ls")
+
+require("vincentdian.plugins.autopairs")
+require("vincentdian.plugins.treesitter")
+require("vincentdian.plugins.gitsigns")
