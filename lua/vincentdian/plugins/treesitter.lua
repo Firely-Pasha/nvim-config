@@ -9,6 +9,7 @@ treesitter.setup({
 	-- enable syntax highlighting
 	highlight = {
 		enable = true,
+		disable = { "html" },
 	},
 	-- enable indentation
 	indent = { enable = true },
