@@ -1,6 +1,6 @@
 local status, lualine = pcall(require, "lualine")
 if not status then
-  return
+	return
 end
 
 -- Bubbles config for lualine
@@ -18,10 +18,10 @@ local colors = {
   grey   = '#303030',
 }
 
-local theme = require("lualine.themes.onelight")
+local theme = require("lualine.themes.onedark")
 
 lualine.setup({
-  options = {
-    theme = theme
-  }
+	options = {
+		theme = "onedark",
+	},
 })
