@@ -96,6 +96,8 @@ return packer.startup(function(use)
 
 	use("leafOfTree/vim-svelte-plugin")
 
+	use({ "mg979/vim-visual-multi", branch = "master" }) -- multicursor
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
