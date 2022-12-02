@@ -94,7 +94,7 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-	use("leafOfTree/vim-svelte-plugin")
+	--	use("leafOfTree/vim-svelte-plugin")
 
 	use({ "mg979/vim-visual-multi", branch = "master" }) -- multicursor
 

@@ -19,17 +19,17 @@ end
 mason.setup()
 
 mason_lspconfig.setup({
-  ensure_installed = {
-    "tsserver",
-    "html",
-    "cssls",
-    "tailwindcss",
-    "sumneko_lua",
-    "svelte",
-    "kotlin_language_server",
-    "rust_analyzer",
-    "jsonls",
-  }
+	ensure_installed = {
+		"tsserver",
+		"html",
+		"cssls",
+		"tailwindcss",
+		"sumneko_lua",
+		"svelte",
+		"kotlin_language_server",
+		"rust_analyzer",
+		"jsonls",
+	},
 })
 
 mason_null_ls.setup({
