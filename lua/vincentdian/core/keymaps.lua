@@ -15,6 +15,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- move lines
+keymap.set("n", "<leader>mn", "<cmd>m+<CR>")
+keymap.set("n", "<leader>mp", "<cmd>m+")
+
 -- window management
 keymap.set("n", "<leader>s=", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>s-", "<C-w>s") -- split window horizontally
