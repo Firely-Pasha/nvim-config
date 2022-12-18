@@ -1,5 +1,10 @@
 vim.g.mapleader = " "
 
+local telescope_builtin_setup, telescope_builtin = pcall(require, "telescope.builtin")
+if not telescope_builtin_setup then
+	return
+end
+
 local keymap = vim.keymap
 
 ---------------------
@@ -48,3 +53,12 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+keymap.set("n", "<leader>?", telescope_builtin.oldfiles, { desc = "[?] Find recently opened files" })
+keymap.set("n", "<leader><space>", telescope_builtin.buffers, { desc = "[ ] Find existing buffers" })
+keymap.set("n", "<leader>/", function()
+	telescope_builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+		windblend = 10,
+		previewer = false,
+	}))
+end, { desc = "[/] Fuzzily search in current buffer" })
