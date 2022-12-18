@@ -15,6 +15,7 @@ require("vincentdian.plugins.lsp.lspconfig")
 require("vincentdian.plugins.lsp.null-ls")
 
 require("vincentdian.plugins.autopairs")
+require("vincentdian.plugins.comment-nvim")
 require("vincentdian.plugins.treesitter")
 require("vincentdian.plugins.gitsigns")
 require("vincentdian.plugins.vim-svelte-plugin")

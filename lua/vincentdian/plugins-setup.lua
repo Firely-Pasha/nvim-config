@@ -98,6 +98,8 @@ return packer.startup(function(use)
 
 	use({ "mg979/vim-visual-multi", branch = "master" }) -- multicursor
 
+	use("numToStr/Comment.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
