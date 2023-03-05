@@ -24,7 +24,7 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"tailwindcss",
-		"sumneko_lua",
+    "lua_ls",
 		"svelte",
 		"kotlin_language_server",
 		"rust_analyzer",
