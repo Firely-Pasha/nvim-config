@@ -12,7 +12,9 @@ saga.setup({
 		open = "<CR>",
 	},
 	-- use enter to open file with definition preview
-	definition_action_keys = {
-		edit = "<CR>",
+	definition = {
+		keys = {
+			edit = "o",
+		},
 	},
 })

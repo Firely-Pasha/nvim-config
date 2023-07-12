@@ -6,7 +6,7 @@ require("vincentdian.core.keymaps")
 
 require("vincentdian.plugins.lualine")
 require("vincentdian.plugins.telescope")
-require("vincentdian.plugins.nvim-tree")
+-- require("vincentdian.plugins.nvim-tree")
 require("vincentdian.plugins.nvim-cmp")
 
 require("vincentdian.plugins.lsp.mason")
