@@ -1,10 +1,5 @@
 vim.g.mapleader = " "
 
-local telescope_builtin_setup, telescope_builtin = pcall(require, "telescope.builtin")
-if not telescope_builtin_setup then
-	return
-end
-
 local keymap = vim.keymap
 
 ---------------------
@@ -16,6 +11,8 @@ keymap.set("i", "jk", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+keymap.set("v", "<C-r>", 'y:%s/<C-r>"//gc<left><left><left>') -- replace selection
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')

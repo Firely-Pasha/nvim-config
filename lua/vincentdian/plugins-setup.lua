@@ -21,4 +21,7 @@ if not status then
 	return
 end
 
+require("vincentdian.core.keymaps")
+require("vincentdian.core.options")
+
 lazy.setup("vincentdian.plugins")

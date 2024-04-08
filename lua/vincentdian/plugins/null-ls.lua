@@ -22,7 +22,9 @@ return {
 			sources = {
 				--  to disable file types use
 				--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-				formatting.prettier, -- js/ts formatter
+				formatting.prettier.with({
+					filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact" },
+				}), -- js/ts formatter
 				formatting.stylua, -- lua formatter
 				formatting.goimports, -- go formatter
 				formatting.golines, -- go formatter
@@ -60,6 +62,7 @@ return {
 				"stylua", -- lua formatter
 				"goimports",
 				"golines",
+				"prettier",
 			},
 			-- auto-install configured formatters & linters (with null-ls)
 			automatic_installation = true,
