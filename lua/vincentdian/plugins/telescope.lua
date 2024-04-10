@@ -22,6 +22,7 @@ return {
 				file_browser = {
 					initial_mode = "normal",
 					theme = "ivy",
+					hijack_netrw = true,
 					mappings = {
 						["i"] = {
 							["<C-a>"] = fb_actions.create,
@@ -29,11 +30,15 @@ return {
 							-- your custom insert mode mappings
 						},
 						["n"] = {
-							["p"] = fb_actions.goto_parent_dir,
+							["a"] = fb_actions.create,
+							["d"] = fb_actions.remove,
+							["k"] = fb_actions.goto_parent_dir,
 							["r"] = fb_actions.rename,
 							["m"] = fb_actions.move,
 							["y"] = fb_actions.copy,
-							["n"] = telescopeActions.select_default,
+							["j"] = telescopeActions.select_default,
+							["n"] = telescopeActions.move_selection_next,
+							["p"] = telescopeActions.move_selection_previous,
 							-- your custom normal mode mappings
 						},
 					},

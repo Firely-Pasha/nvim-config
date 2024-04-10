@@ -38,3 +38,4 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 opt.scrolloff = 10
+opt.swapfile = false
